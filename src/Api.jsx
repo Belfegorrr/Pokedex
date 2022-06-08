@@ -1,4 +1,3 @@
-import React,{useEffect,useState} from "react";
 
 export const searchPokemons = async (pokemons) => {
   try{

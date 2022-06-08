@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-div {
+body {
   width: 90rem;
   margin-left: auto;
   margin-right: auto;
@@ -58,12 +58,20 @@ nav img {
   text-decoration: none;
   color: #000000;
 }
+.homecabecalho:hover,
+.listapokemon:hover,
+.contato:hover{
+  
+  font-weight: bold;
+  border-bottom: 1px solid
+}
 .titulocapa {
   position: absolute;
   width: 454px;
   height: 152px;
-  left: 165px;
-  top: 198px;
+  margin: 198px 821px 550px 165px;
+
+
 
   font-family: 'Inter';
   font-style: normal;
@@ -77,8 +85,8 @@ nav img {
   position: absolute;
   width: 438px;
   height: 72px;
-  left: 165px;
-  top: 368px;
+  margin: 368px 837px 460px 165px;
+
 
   font-family: 'Inter';
   font-style: normal;
@@ -118,9 +126,205 @@ nav img {
 }
 .banner {
   position: absolute;
-  left: 648px;
-  right: 1px;
-  top: 160px;
-  bottom: 12.97px;
+  margin: 160px 1px 12.97px 648px;
+
   background: #ffffff;
 }
+
+/* //-----------------------------pokemon.css------------------------------------------------------//* */
+
+.card-box {
+  display: flex;
+  height: 6.813rem;
+  border-radius: 0.938rem;
+  background-color: #b8b8f3;
+  color: #201d1d;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: stretch;
+}
+
+section img.pokemon-image {
+  height: 5rem;
+  margin-top: 17px;
+}
+
+.index-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+section.barradebusca {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 37px;
+}
+
+section h1.pokemontitulo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 31px;
+  margin-top: 73px;
+}
+.atributos {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 59px;
+  margin-left: 207px;
+}
+.botaotipo,
+.listaataque,
+.listadefesa {
+  display: flex;
+  width: 135px;
+  height: 21px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgb(33 33 33 / 10%);
+  background-color: #f2f2f2;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  border: none;
+}
+.listadefesa svg {
+  margin-left: 35.75px;
+  margin-right: 6.75px;
+}
+.listaataque svg {
+  margin-left: 35.75px;
+  margin-right: 6.75px;
+}
+.botaotipo svg {
+  margin-left: 35.75px;
+  margin-right: 6.75px;
+}
+
+.listaataque,
+.listadefesa {
+  margin-left: 64px;
+  border: none;
+  box-shadow: 2px 2px 2px rgb(33 33 33 / 10%);
+  width: 135px;
+  height: 21px;
+}
+
+section ul li.item {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+section.listaaberta ul li.item {
+  position: initial;
+  visibility: visible;
+  opacity: 1;
+}
+
+.inputbusca {
+  width: 1088px;
+  height: 53px;
+  background: #ffffff;
+  border: 1px solid #f1f1f1;
+  box-shadow: 4px 4px 16px rgba(1, 28, 64, 0.1);
+  border-radius: 40px;
+}
+.lupa {
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  right: 130px;
+  bottom: 355px;
+}
+
+img.bannercontato{
+  position: absolute;
+  margin: 140px 250px 30px 650px;
+  z-index: 1;
+}
+section h1.titulocontato{
+  width: 454px;
+  height: 152px;
+  margin: 90px 29px 18px 165px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+section p.paragrafocontato{
+  width: 438px;
+  height: 72px;
+  letter-spacing: 0.02rem;
+  margin: 0 45px 18px 165px;
+  font-size: 20px;
+}
+.input-nome,
+.input-email,
+.input-telefone{
+  display: block;
+  margin: 25px 0 0 165px;
+  padding: 10px 25px;
+  width: 25%;
+  font-size: 14px;
+}
+
+.input-padrao{
+  display: block;
+  margin: 25px 0 40px 165px;
+  padding: 20px 25px;
+  width: 70%;
+}
+
+.usuariocontato{
+  margin: 25px 0 0 165px;
+  font-size: 14px;
+}
+
+/* ....................................................paginacao.css */
+.paginacao-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.botaoprev,
+.botaoaba,
+.botaonext {
+  height: 8px;
+  width: 8px;
+  margin-left: 16px;
+  background-color: #ffffff;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* .......................................................pokedexxx.css */
+
+div.pokedex-grid {
+  display: grid;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-items: stretch;
+  justify-content: center;
+  align-content: space-evenly;
+  grid-template-columns: 10.125rem 10.125rem 10.125rem 10.125rem 10.125rem 10.125rem;
+  grid-template-rows: 6.813rem 6.813rem 6.813rem 6.813rem;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+
+div.items-card img {
+  display: flex;
+  justify-content: right;
+  width: auto;
+  height: auto;
+  position: fixed;
+  right: 2rem;
+}
+
+

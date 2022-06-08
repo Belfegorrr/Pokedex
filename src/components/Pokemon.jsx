@@ -1,37 +1,42 @@
-import React from "react";
+import React from 'react'
+import './home.css'
 
 const Pokemon = (props) => {
-  const{pokemon} = props;
-  const onHeartClick = () => {
-    console.log('pode favoritar')
-  }
-  const heart = "";
+  const { pokemon} = props 
+
+  function backGroundColor(pokemon){     
+      if (!pokemon) {
+        console(error)
+      } else { 
+        const idpoke = section.classList.add(`${backGroundColor(pokemon)}`)
+        const first = pokemon.types.find(() => true)
+        document.getElementById(`${backGroundColor(pokemon)}`);
+        return first.name;        
+      }
+    }
+    
   return (
     <div>
-      <div>
-        <img alt="{pokemon.name}" src="{pokemon.sprites.front_default}" className="pokemon-image"></img>
-      </div>
-      <div className="card-body">
-        <div className="card-top">
-          <h3>{pokemon.name}</h3>
-          <div>{pokemon.id}</div>
-        </div>
-        <div className="card-bottom">
-          <div className="pokemon-type">
-            {pokemon.types.map((type,index) => {
-              return (
-                <div key={index} className="pokemon-type-text">{type.type.name}</div>
-              )
-            }
-            )}
-          </div>
-              <button className="pokemon-heart-btn" onClick={onHeartClick}>
-                  {heart}
-              </button>
-        </div>
-      </div>
+    <section className='card-box' >      
+      <section>
+      <h3 className="pokename">{pokemon.name}</h3>
+      </section>      
+      {pokemon.types.map((type, index) => {      
+        return (
+          <p className="pokemon-type-text" key={index}>{type.type.name}</p>
+        )
+      })}
+      <section className='index-image'>
+      #{pokemon.id}
+      <img
+        className="pokemon-image"
+        alt={pokemon.name}
+        src={pokemon.sprites.front_default}
+      ></img>
+      </section>
+    </section>
     </div>
   )
 }
 
-export default Pokemon;
+export default Pokemon
