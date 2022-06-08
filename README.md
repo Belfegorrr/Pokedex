@@ -2,7 +2,7 @@
 Processo Seletivo - Zappts
 
 
-https://pokedex-pi-woad.vercel.app/
+[https://pokedex-pi-woad.vercel.app/](https://pokedex-mu-ten.vercel.app/)
 
 
 
