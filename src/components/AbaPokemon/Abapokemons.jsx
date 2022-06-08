@@ -1,9 +1,9 @@
-import { getPokemonData, getPokemons } from '../Api'
+import { getPokemonData, getPokemons } from '../Pokedex/Api'
 import React, { useState, useEffect } from 'react'
 import { Link} from 'react-router-dom';
-import Searchbar from './SearchPoke'
-import Pokedex from './Pokedexx'
-import './home.css'
+import Searchbar from '../Searchbar/SearchPoke'
+import Pokedex from '../Pokedex/Pokedexx'
+import '../../global.css'
 
 const Abapokemons = () => {
 

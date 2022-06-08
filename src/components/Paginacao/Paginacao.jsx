@@ -1,5 +1,5 @@
 import React from "react";
-import './home.css'
+import '../../global.css'
 
 const Paginacao = (props) => {
   const {onLeftClick, onRightClick} = props;

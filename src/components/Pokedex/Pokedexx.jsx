@@ -1,7 +1,7 @@
 import React from 'react'
-import Paginacao from './Paginacao'
-import Pokemon from './Pokemon'
-import './home.css'
+import Paginacao from '../Paginacao/Paginacao'
+import Pokemon from '../Pokedex/Pokemon'
+import '../../global.css'
 
 const Pokedex = (props) => {
   const { pokemons, loading, page, setPage, totalPages } = props
@@ -19,7 +19,7 @@ const Pokedex = (props) => {
   return (
     <section className='pokedex-where'>
       {loading ? (
-        <div>Carregando, ...</div>
+        <div className='carregandoo'>Carregando</div>
       ) : (
         <div className="pokedex-grid">          
           {pokemons &&

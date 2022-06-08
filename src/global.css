@@ -1,3 +1,14 @@
+:root{
+  --grass:  #48d0b0;
+  --water: #77bdfe;
+  --fire: #fb6c6c;
+  --poison: #a499c1;
+  --ghost: #888888;
+  --bug: #b5dd75;
+  --psychic: #ce8083;
+  --normal: #f3bcc3;
+  --eletric: #fed76e;  
+}
 * {
   margin: 0;
   padding: 0;
@@ -60,18 +71,15 @@ nav img {
 }
 .homecabecalho:hover,
 .listapokemon:hover,
-.contato:hover{
-  
+.contato:hover {
   font-weight: bold;
-  border-bottom: 1px solid
+  border-bottom: 1px solid;
 }
 .titulocapa {
   position: absolute;
   width: 454px;
   height: 152px;
   margin: 198px 821px 550px 165px;
-
-
 
   font-family: 'Inter';
   font-style: normal;
@@ -86,7 +94,6 @@ nav img {
   width: 438px;
   height: 72px;
   margin: 368px 837px 460px 165px;
-
 
   font-family: 'Inter';
   font-style: normal;
@@ -135,7 +142,7 @@ nav img {
 
 .card-box {
   display: flex;
-  height: 6.813rem;
+  height: 7.5rem;
   border-radius: 0.938rem;
   background-color: #b8b8f3;
   color: #201d1d;
@@ -143,7 +150,7 @@ nav img {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  align-content: stretch;
+  align-content: flex-start;
 }
 
 section img.pokemon-image {
@@ -157,13 +164,42 @@ section img.pokemon-image {
   align-items: center;
   justify-content: space-between;
 }
+.type-grass{
+  background-color: var(--grass);
+  }
+.type-fire{
+  background-color: var(--fire);
+  }
+.type-water{
+  background-color: var(--water);
+  }
+.type-normal{
+  background-color: var(--normal);
+  }
+.type-poison{
+  background-color: var(--poison);
+  }
+.type-ghost{
+  background-color: var(--ghost);
+  }
+.type-psychic{
+  background-color: var(--psychic);
+  }
+.type-eletric{
+  background-color: var(--eletric);
+  }
+.type-bug{
+  background-color: var(--bug);
+  }
 section.barradebusca {
+  font-family: 'Open Sans';
   display: flex;
   justify-content: center;
   margin-bottom: 37px;
 }
 
 section h1.pokemontitulo {
+  font-family: 'Open Sans';
   display: flex;
   justify-content: center;
   margin-bottom: 31px;
@@ -178,6 +214,7 @@ section h1.pokemontitulo {
 .botaotipo,
 .listaataque,
 .listadefesa {
+  font-family: 'Open Sans';
   display: flex;
   width: 135px;
   height: 21px;
@@ -236,33 +273,37 @@ section.listaaberta ul li.item {
   position: absolute;
   z-index: 1;
   border: none;
-  right: 130px;
-  bottom: 355px;
+  margin: 17.98px 220.01px 623.02px 1199.98px;
 }
 
-img.bannercontato{
+img.bannercontato {
   position: absolute;
   margin: 140px 250px 30px 650px;
   z-index: 1;
 }
-section h1.titulocontato{
+section h1.titulocontato {
+  font-family: 'Open Sans';
   width: 454px;
   height: 152px;
-  margin: 90px 29px 18px 165px;
+  margin: 90px 29px 15px 165px;
   text-decoration: none;
   font-size: 30px;
 }
 
-section p.paragrafocontato{
+section p.paragrafocontato {
+  font-family: 'Open Sans';
   width: 438px;
   height: 72px;
   letter-spacing: 0.02rem;
   margin: 0 45px 18px 165px;
   font-size: 20px;
 }
+.submit,
+.reset,
 .input-nome,
 .input-email,
-.input-telefone{
+.input-telefone {
+  font-family: 'Open Sans';
   display: block;
   margin: 25px 0 0 165px;
   padding: 10px 25px;
@@ -270,14 +311,35 @@ section p.paragrafocontato{
   font-size: 14px;
 }
 
-.input-padrao{
+.submit,
+.reset {
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 40px;
+  box-shadow: 2px 2px 2px rgba(33, 33, 33, 0.1);
+  border-radius: 4px;
+  background-color: #94636338;
+  border: none;
+}
+.submit:hover,
+.reset:hover {
+  font-family: 'Open Sans';
+  background-color: #797679;
+  transition: ease-in-out;
+  transition-duration: 300ms;
+  color: #f2f2f2;
+}
+
+.input-padrao {
   display: block;
-  margin: 25px 0 40px 165px;
+  margin: 25px 0 30px 165px;
   padding: 20px 25px;
   width: 70%;
 }
 
-.usuariocontato{
+.usuariocontato {
   margin: 25px 0 0 165px;
   font-size: 14px;
 }
@@ -305,26 +367,25 @@ section p.paragrafocontato{
 /* .......................................................pokedexxx.css */
 
 div.pokedex-grid {
+  font-family: 'Open Sans';
   display: grid;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   align-items: center;
   justify-items: stretch;
   justify-content: center;
   align-content: space-evenly;
-  grid-template-columns: 10.125rem 10.125rem 10.125rem 10.125rem 10.125rem 10.125rem;
+  grid-template-columns: 12.125rem 12.125rem 12.125rem 12.125rem 12.125rem 12.125rem;
   grid-template-rows: 6.813rem 6.813rem 6.813rem 6.813rem;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-column-gap: 12px;
+  grid-row-gap: 22px;
 }
 
-
-div.items-card img {
+.index-image {
+  margin-left: 15px;
+  margin-right: 0;
+}
+.carregandoo{
   display: flex;
-  justify-content: right;
-  width: auto;
-  height: auto;
-  position: fixed;
-  right: 2rem;
+  justify-content: center;
+  font-size: 2rem;  
 }
-
-

@@ -1,9 +1,9 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Abapokemons from './Abapokemons'
-import Contato from './Contato'
-import Home from './Home'
-import NoPageFound from './NoPageFound'
+import Abapokemons from '../src/components/AbaPokemon/Abapokemons'
+import Contato from '../src/components/AbaContato/Contato'
+import Home from '../src/components/AbaHome/Home'
+import NoPageFound from '../src/components/Loading/NoPageFound'
 
 const Rotas = () => {
   return (

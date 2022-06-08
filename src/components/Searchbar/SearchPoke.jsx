@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './home.css'
+import '../../global.css'
 
 const Searchbar = (props) => {
   const [search, setSearch] = useState('ditto')

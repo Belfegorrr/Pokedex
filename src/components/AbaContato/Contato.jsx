@@ -1,5 +1,5 @@
 import React from 'react'
-import './home.css'
+import '../../global.css'
 import { Link} from 'react-router-dom';
 
 const Contato = () => {
@@ -15,7 +15,7 @@ const Contato = () => {
         <section>
             <img className='bannercontato' src="../../images/ash-e-pikachu.png" alt="Ash e Pikachu sorrindo" />
         </section>
-          <h1 className='titulocontato'>Sugetão? Dúvidas? Não hesite em entra em contato conosco.</h1>
+          <h1 className='titulocontato'>Sugestão? Dúvidas? Não hesite em entrar em contato conosco.</h1>
           <p className='paragrafocontato'>Seu FeedBack é importantíssimo para nosso crescimento e evolução.</p>
           <section className='listaparacontato'>
           <p className='usuariocontato'>Nome Completo</p>
@@ -26,6 +26,8 @@ const Contato = () => {
           <input type="number" name="" id="" class="input-telefone" placeholder='XX-XXXXXXX'/>
           <p className='usuariocontato'>Deixe sua mensagem abaixo: </p>         
           <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+          <input type="submit" class="submit" value="Enviar" />
+          <input type="reset" class="reset" value="Resetar" />
           </section>
         </section>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import './home.css'
+import '../../global.css'
 import { Link} from 'react-router-dom';
 
 const Home = () => {  
@@ -8,7 +8,7 @@ const Home = () => {
       <section className="wrapper">
         <nav className="cabecalho">
           <img src="./images/logo.svg" alt="Logo do Pokemon" />
-          <Link to="/"className="homecabecalho">Home</Link>
+          <Link to="/"className="homecabecalho" >Home</Link>
           <Link to="/pokemons" className="listapokemon">Pokemons</Link>
           <Link to="/contato" className="contato">Contato</Link>
         </nav>
