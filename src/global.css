@@ -7,7 +7,7 @@
   --bug: #b5dd75;
   --psychic: #ce8083;
   --normal: #f3bcc3;
-  --eletric: #fed76e;
+  --electric: #fed76e;
   --ground: #aa773e;
   --rock: #baba88;
   --fighting: #fea401;
@@ -190,8 +190,8 @@ section img.pokemon-image {
 .type-psychic {
   background-color: var(--psychic);
 }
-.type-eletric {
-  background-color: var(--eletric);
+.type-electric {
+  background-color: var(--electric);
 }
 .type-bug {
   background-color: var(--bug);
