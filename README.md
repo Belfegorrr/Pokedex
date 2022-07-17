@@ -2,7 +2,7 @@
 
 
 
-[https://pokedex-pi-woad.vercel.app/](https://pokedex-mu-ten.vercel.app/)
+[https://pokedex-alpha-two.vercel.app/](https://pokedex-alpha-two.vercel.app/)
 
 
 
