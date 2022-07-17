@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react'
 import { Link} from 'react-router-dom';
 import Searchbar from '../Searchbar/SearchPoke'
 import Pokedex from '../Pokedex/Pokedexx'
+
+import logo from '../../../public/logo.svg'
 import '../../global.css'
 
 const Abapokemons = () => {
@@ -55,7 +57,7 @@ const Abapokemons = () => {
     <div>
       <section className="wrapper">
         <nav className="cabecalho">
-          <img src="./images/logo.svg" alt="Logo do Pokemon" />
+          <img src={logo} alt="Logo do Pokemon" />
           <Link to="/"className="homecabecalho">Home</Link>
           <Link to="/pokemons" className="listapokemon">Pokemons</Link>
           <Link to="/contato" className="contato">Contato</Link>

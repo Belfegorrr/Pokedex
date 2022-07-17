@@ -1,4 +1,3 @@
-
 export const searchPokemons = async (pokemons) => {
   try{
     let url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`

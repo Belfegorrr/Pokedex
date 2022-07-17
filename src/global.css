@@ -51,6 +51,11 @@ nav img {
   text-decoration: none;
   color: #000000;
 }
+.homecabecalho::input:enabled {
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+
 .listapokemon {
   font-family: 'Open Sans';
   font-weight: 400;

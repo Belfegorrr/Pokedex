@@ -2,12 +2,15 @@ import React from 'react'
 import '../../global.css'
 import { Link} from 'react-router-dom';
 
+import logo from '../../../public/logo.svg'
+import banner from '../../../public/banner.png'
+
 const Home = () => {  
   return (
     <div>          
       <section className="wrapper">
         <nav className="cabecalho">
-          <img src="./images/logo.svg" alt="Logo do Pokemon" />
+          <img src={logo} alt="Logo do Pokemon" />
           <Link to="/"className="homecabecalho" >Home</Link>
           <Link to="/pokemons" className="listapokemon">Pokemons</Link>
           <Link to="/contato" className="contato">Contato</Link>
@@ -20,7 +23,7 @@ const Home = () => {
           </p>
           <Link to="/pokemons" className="botaocapa">Veja os pokemons</Link>         
           <img
-            src="../../images/banner.png"
+            src={banner}
             className="banner"
             alt="Pikachu feliz e pokebolas"
           />
